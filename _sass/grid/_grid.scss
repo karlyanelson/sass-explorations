@@ -1,0 +1,45 @@
+@import 'mixins';
+
+.row{
+  @include row();
+
+  &:nth-child(even){
+    background: rgba(black, .15);
+  }
+}
+
+.row section{
+  border:1px solid rgba(blue, .5);
+
+  // &:first-child{
+  //   @include col($first: true);
+  // }
+  //
+  // &:last-child{
+  //   @include col($last: true);
+  // }
+}
+
+.first{
+  section{
+    @include col($sum: 3);
+  }
+}
+
+.second{
+  section{
+    @include col($sum: 2);
+  }
+}
+
+.third{
+  section{
+    @include col($sum: 4);
+  }
+}
+
+.fourth{
+  section{
+    @include col($sum: 3);
+  }
+}
