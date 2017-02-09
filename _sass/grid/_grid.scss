@@ -11,13 +11,13 @@
 .row section{
   border:1px solid rgba(blue, .5);
 
-  // &:first-child{
-  //   @include col($first: true);
-  // }
-  //
-  // &:last-child{
-  //   @include col($last: true);
-  // }
+  &:first-child{
+    padding-left: 0;
+  }
+
+  &:last-child{
+    padding-right: 0;
+  }
 }
 
 .first{
